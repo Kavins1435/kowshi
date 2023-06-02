@@ -1,0 +1,155 @@
+﻿@{
+    ViewBag.Title = "Contact Us";
+}
+
+
+<head>
+    <link href="@Url.Content("~/Content/contact.css")" rel="stylesheet" type="text/css" />
+</head>
+<style>
+    /* Add your CSS styles here */
+
+    /* Global styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: lightgreen;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header styles */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+
+    nav {
+        /* Navigation styles */
+    }
+
+    /* Main content styles */
+    main {
+        padding: 20px;
+    }
+
+    .contact-form {
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    button[type="submit"] {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border .contact-info
+
+    {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .contact-info h3 {
+        color: #555;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .contact-info p {
+        color: #777;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+</style>
+<main>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Business Email *</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="hotel">Hotel Name *</label>
+                <input type="text" id="hotel" name="hotel" required>
+                <span class="error" id="hotelError"></span>
+            </div>
+            <div class="form-group">
+                <label for="countryCode">Country Code *</label>
+                <input type="text" id="countryCode" name="countryCode" required>
+                <span class="error" id="countryCodeError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="text" id="phone" name="phone" required>
+                <span class="error" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" maxlength="255"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="captcha">Captcha *</label>
+                <input type="text" id="captcha" name="captcha" required>
+                <span class="error" id="captchaError"></span>
+                <div id="captchaImage"></div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="contactDetails" style="display: none;">
+            <h3>Thank you for contacting us!</h3>
+            <p>Your message has been received. Here are the details you provided:</p>
+            <p id="contactName"></p>
+            <p id="contactEmail"></p>
+            <p id="contactHotel"></p>
+            <p id="contactCountryCode"></p>
+            <p id="contactPhone"></p>
+            <p id="contactState"></p>
+            <p id="contactMessage"></p>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <!-- Footer content -->
+</footer>
+
+<script src="contact.js"></script>
+
+
+
+<div class="contact-info">
+    <h3>Contact Information</h3>
+    <p>
+        Address: 123 Main Street, City, State, Zip Code<br />
+        Phone: 123-456-7890<br />
+        Email: info@examplehotel.com
+    </p>
+</div>

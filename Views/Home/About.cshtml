@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<style>
+    /* Set padding to keep content from hitting the edges */
+
+ /*   h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .about-section {
+        margin-bottom: 40px;
+    }
+
+        .about-section h3 {
+            color: #555;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .about-section p {
+            color: #777;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .about-section ul {
+            list-style: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .about-section li {
+            color: #777;
+            font-size: 16px;
+            line-height: 1.5;
+        }*/
+
+        main {
+  padding: 50px;
+  text-align: center;
+  
+  color: white;
+}
+body{
+        background-color: #474e5d;
+}
+
+
+</style>
+<main aria-labelledby="title">
+   @* <h2 id="title">@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>*@
+
+    @{
+        ViewBag.Title = "About Us";
+    }
+
+    
+    <head>
+        <link href="@Url.Content("~/Content/site.css")" rel="stylesheet" type="text/css" />
+    </head>
+
+
+    <div>
+
+        <div class="about-section">
+            <h1 style="color:black;">About Us Page</h1>
+            <h3 style="color:black;">Our Hotel</h3>
+            <p>Welcome to our luxury hotel, where comfort meets elegance. Our hotel is located in a prime location, offering breathtaking views and world-class amenities.</p>
+
+        </div>
+
+        
+        <h3 style="color:black;">Our Mission</h3>
+        <p>At our hotel, we strive to provide exceptional service and create memorable experiences for our guests. Whether you are here for business or leisure, our dedicated staff is committed to ensuring your stay is nothing short of extraordinary.</p>
+
+        <h3 style="color:black;">Our Services</h3>
+        <ul style="list-style:none;">
+            <li>Luxurious and spacious rooms</li>
+            <li>24/7 concierge service</li>
+            <li>Fine dining restaurants</li>
+            <li>Fitness center and spa</li>
+            <li>Meeting and event spaces</li>
+            <li>Outdoor pool and sun deck</li>
+        </ul>
+    </div>
+</main>

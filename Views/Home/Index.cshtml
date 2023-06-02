@@ -1,0 +1,204 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<head>
+    <link href="@Url.Content("~/Content/index.css")" rel="stylesheet" type="text/css" />
+</head>
+
+<style>
+    .background-image {
+        background-image: url("https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=600");
+        width:100%;
+        height:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        background-size: 100% 100vh;
+}
+
+
+.hero-text {
+    text-align: center;
+}
+
+    .hero-text h1 {
+        font-size: 4em;
+        margin-bottom: 50px;
+        color:white;
+    }
+
+    .hero-text p {
+        font-size: 1.5em;
+        color:white;
+    }
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.room-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.room-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+    .room-card img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .room-card h3 {
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+
+    .room-card p {
+        font-size: 1.2em;
+        color: #777;
+    }
+
+    .room-card a {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+        .room-card a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+home-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.home-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.home-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.home-section li {
+    margin-bottom: 20px;
+}
+
+.home-section .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-section img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.home-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home-section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.background-image{
+       
+    }
+
+</style>
+<main>
+    <div class="background-image">
+        <div class="hero-text">
+
+            <h1>Welcome to Our Hotel</h1>
+            <p>Book a room today and experience comfort like never before!</p>
+            
+        </div>
+    </div>
+    <section>
+        <h2>Our Rooms</h2>
+        <div class="room-container">
+            <div class="room-card">
+                <img src="asset\standard img.jpg" alt="Room 1">
+                <h3>Standard Room</h3>
+                <p>$100/night</p>
+                <a href="#">Book Now</a>
+            </div>
+            <div class="room-card">
+                <img src="asset\delexe.jpg" alt="Room 2">
+                <h3>Deluxe Room</h3>
+                <p>$150/night</p>
+                <a href="#">Book Now</a>
+            </div>
+            <div class="room-card">
+                <img src="asset\superior.jfif" alt="Room 3">
+                <h3>Superior Room</h3>
+                <p>$200/night</p>
+                <a href="#">Book Now</a>
+            </div>
+        </div>
+    </section>
+    <div class="home-section">
+        <h2>Why Book Hotels with EaseMyTrip.com?</h2>
+        <ul>
+            <li>
+                <div class="feature">
+                    <img src="asset/IMG-20230601-WA0005.jpg" alt="Extensive Hotel Options" />
+                    <h3>Extensive Hotel Options</h3>
+                    <p>Best hotels available for different destinations to offer you the stay of a lifetime.</p>
+                </div>
+            </li>
+            <li>
+                <div class="feature">
+                    <img src="asset/IMG-20230601-WA0003.jpg" alt="Savings on Hotel Booking" />
+                    <h3>Savings on Hotel Booking</h3>
+                    <p>Enjoy hotel bookings with the best offers and discounts and make your stay unforgettable.</p>
+                </div>
+            </li>
+            <li>
+                <div class="feature">
+                    <img src="asset/IMG-20230601-WA0006.jpg" alt="Hotel Ratings" />
+                    <h3>Hotel Ratings</h3>
+                    <p>All our hotels have good ratings on Trip Advisor and are recommended by users.</p>
+                </div>
+            </li>
+            <li>
+                <div class="feature">
+                    <img src="best-price.jpg" alt="Best Price" />
+                    <h3>Best Price</h3>
+                    <p>Get excellent hotels/resorts at the best prices to pamper your desires.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</main>
